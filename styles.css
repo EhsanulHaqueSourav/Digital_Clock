@@ -1,0 +1,49 @@
+@keyframes borderColorChange {
+    0% {
+        border-color: #ff0000;
+        box-shadow: 0px 0px 40px 10px rgba(255, 0, 0, 0.5);
+    }
+    33% {
+        border-color: #00ff00;
+        box-shadow: 0px 0px 40px 10px rgba(0, 255, 0, 0.5);
+    }
+    66% {
+        border-color: #0000ff;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 255, 0.5);
+    }
+    100% {
+        border-color: #ff0000;
+        box-shadow: 0px 0px 40px 10px rgba(255, 0, 0, 0.5);
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    font-family: 'Arial', sans-serif;
+    color: #61dafb;
+}
+
+.clock {
+    text-align: center;
+    border: 5px solid #61dafb;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #20232a;
+    animation: borderColorChange 5s infinite; 
+}
+
+.time {
+    font-size: 3em;
+    
+}
+
+.date {
+    font-size: 1.5em;
+    margin-top: 10px;
+   
+}
